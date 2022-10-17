@@ -1,0 +1,527 @@
+package smartcity;
+import java.util.Scanner;  
+import java.util.*;
+//Exception handling
+class InvalidCase extends Exception{
+	InvalidCase(){
+		System.out.println("Please Enter The Correct Case");
+	}
+}
+//Inheritance
+class Intro{
+	void display() {
+		System.out.println("**********************WELCOME TO THE SMART CITY**********************");
+		System.out.println();
+		System.out.println("         The Name Of Then Smart City is----->CHENNAI           ");
+		System.out.println();
+		System.out.println("Some Intresting Facts of Chennai City:");
+		System.out.println();
+		System.out.println("--->Chennai was First Called As MADRAS.");
+		System.out.println("--->Chennai is The First City in India to have a vast network of Wifi.");
+		System.out.println("--->Chennai is the Capital of TamilNAdu state");
+		System.out.println("--->Chenai city is home to Fort St.George,built in 1644");
+		System.out.println("--->Some Intresting Tourist Spots At Chennai:-\n      1.Marina Beach\n      2.Fort St.George Museum\n      3.Guindy National Park");
+		System.out.println();	
+	}
+}
+	class Main extends Intro{
+		//Methods 
+void hotels() {
+	try {
+		System.out.println("Loading......");
+		Thread.sleep(5000);
+	}catch(InterruptedException e){
+		}
+	System.out.println("1.ITC Grand Chola\n2.The Leela Palace\n3.Crowne Plaza");
+	Scanner scan=new Scanner(System.in);
+	int n=scan.nextInt();
+	if(n==1) {
+		System.out.println("The Hotel Name is:ITC Grand Chola");
+		System.out.println("The Amount for Single Room Per Day is:3000");
+		System.out.println("The Amount for Single Room Per Day With Food is:3200");
+		System.out.println("The Amount for Single Room Per Day With Food  And With Swiming Pool is:3500");
+		System.out.println("The Star Rating Of The Hotel is:5");
+		}
+	else if(n==2) {
+		System.out.println("The Hotel Name is:The Leela Palace");
+		System.out.println("The Amount for Single Room Per Day is:2000");
+		System.out.println("The Amount for Single Room Per Day With Food is:2200");
+		System.out.println("The Amount for Single Room Per Day With Food  And With Swiming Pool is:2500");
+		System.out.println("The Star Rating Of The Hotel is:4.5");
+		}
+	else if(n==3) {
+		System.out.println("The Hotel Name is:Crowne Plaza");
+		System.out.println("The Amount for Single Room Per Day is:1000");
+		System.out.println("The Amount for Single Room Per Day With Food is:1200");
+		System.out.println("The Amount for Single Room Per Day With Food  And With Swiming Pool is:1500");
+		System.out.println("The Star Rating Of The Hotel is:4");
+		}
+	else {
+		System.out.println("The Hotel is Unavailabe Currently");
+	}
+			}//closing of void hotel method
+void theaters() {
+	try {
+		System.out.println("Loading......");
+		Thread.sleep(5000);
+	}catch(InterruptedException e){
+		}
+	System.out.println("1.Rocky Theater\n2.Sathyam Theater\n3.Meenakshi Theater");
+	Scanner scan=new Scanner(System.in);
+	int n=scan.nextInt();
+	if(n==1)
+	{
+		System.out.println("The Theater Name is:Rocky Theater");
+		System.out.println("Ticket for Morning Shows is:250");
+		System.out.println("Ticket for Noon Shows is:200");
+		System.out.println("Ticket for MidNight Shows:300");
+		System.out.println("The Star Rating of the Theater:3");
+		}
+	else if(n==2) {
+		System.out.println("The Theater Name is:Sathyam Theater");
+		System.out.println("Ticket for Morning Shows is:450");
+		System.out.println("Ticket for Noon Shows is:400");
+		System.out.println("Ticket for MidNight Shows:500");
+		System.out.println("The Star Rating of the Theater:5");
+	}
+	else if(n==3) {
+		System.out.println("The Theater Name is:Meenakshi Theater");
+		System.out.println("Ticket for Morning Shows is:350");
+		System.out.println("Ticket for Noon Shows is:300");
+		System.out.println("Ticket for MidNight Shows:400");
+		System.out.println("The Star Rating of the Theater:4");
+	}
+	else
+	{
+		System.out.println("The Theater is Currently UnAvailable");
+	}
+}//closing of void theater method
+void appartments() {
+	try {
+		System.out.println("Loading......");
+		Thread.sleep(5000);
+	}catch(InterruptedException e){
+		}
+	System.out.println("1.Abi Appartments\n2.Meena Appartments\n3.Trend Appartments");
+	Scanner scan=new Scanner(System.in);
+	int n=scan.nextInt();
+	if(n==1) {
+		System.out.println("The Appartment Name is:Abi Appartment");
+		System.out.println("The Rent of 1BHK=5000");
+		System.out.println("The Rent of 2BHK=10000");
+		System.out.println("The Rent of 3BHK=15000");
+		System.out.println("The Star Rating of The Appartment=4.5");
+	}
+	else if(n==2) {
+		System.out.println("The Appartment Name is:Meena Appartment");
+		System.out.println("The Rent of 1BHK=7000");
+		System.out.println("The Rent of 2BHK=10000");
+		System.out.println("The Rent of 3BHK=14000");
+		System.out.println("The Star Rating of The Appartment=4");
+	}
+	else if(n==3){
+		System.out.println("The Appartment Name is:Trend Appartment");
+		System.out.println("The Rent of 1BHK=8000");
+		System.out.println("The Rent of 2BHK=16000");
+		System.out.println("The Rent of 3BHK=20000");
+		System.out.println("The Star Rating of The Appartment=5");
+}
+	else {
+		System.out.println("The Appartment is Currently UnAvailable");
+	}
+}//closing of void apartments method
+void schools() {
+	try {
+		System.out.println("Loading......");
+		Thread.sleep(5000);
+	}catch(InterruptedException e){
+		}
+	System.out.println("1.Nazreth Matriculation Higher Secondary School\n2.C.S.I Bishop Corrie Anglo Indian Higher Secondary School\n3.Velamal CBSE School");
+Scanner scan=new Scanner(System.in);
+int n=scan.nextInt();
+if(n==1) {
+	System.out.println("The Name of The School is:Nazreth Matriculation Higher Secondary School");
+	System.out.println("The Fees for 1st to 5th Standard is:3000");
+	System.out.println("The Fees for 6th to 10th Stndard is:5000");
+	System.out.println("The Fees for 11th and 12th is:9000");
+	System.out.println("The Star Rating of The School=5");
+}
+else if(n==2) {
+	System.out.println("The Name of The School is:C.S.I Bishop Corrie Anglo Indian Higher Secondary School");
+	System.out.println("The Fees for 1st to 5th Standard is:5000");
+	System.out.println("The Fees for 6th to 10th Stndard is:8000");
+	System.out.println("The Fees for 11th and 12th is:10000");
+	System.out.println("The Star Rating of The School=4.5");
+}
+else if(n==3) {
+	System.out.println("The Name of The School is:Velamal CBSE School");
+	System.out.println("The Fees for 1st to 5th Standard is:6000");
+	System.out.println("The Fees for 6th to 10th Stndard is:10000");
+	System.out.println("The Fees for 11th and 12th is:12000");
+	System.out.println("The Star Rating of The School=4.2");
+}
+else {
+	System.out.println("The School is Currently not Available");
+}
+}//closing of void schools method
+void colleges() {
+	try {
+		System.out.println("Loading......");
+		Thread.sleep(5000);
+	}catch(InterruptedException e){
+		}
+	System.out.println("1.Stella Maris College\n2.Loyolo College\n3.Mahalashmi Women's College");
+	Scanner scan=new Scanner(System.in);
+	int n=scan.nextInt();
+if(n==1) {
+	System.out.println("The Name of The College is:Stella Maris College");
+	System.out.println("The Fees for the UG is between 30000-50000");
+	System.out.println("The Fees for the PG is between 60000-80000");
+	System.out.println("The Star Rating of The College=4.5");
+}
+else if(n==2) {
+	System.out.println("The Name of The College is:Loyola College");
+	System.out.println("The Fees for the UG is between 40000-60000");
+	System.out.println("The Fees for the PG is between 70000-100000");
+	System.out.println("The Star Rating of The College=5");	
+}
+else if(n==3) {
+	System.out.println("The Name of The College is:Mahalashmi Women's College");
+	System.out.println("The Fees for the UG is between 20000-30000");
+	System.out.println("The Fees for the PG is between 40000-60000");
+	System.out.println("The Star Rating of The College=4");
+}
+else {
+	System.out.println("The College is Currently not Available");
+}
+}//closing of void colleges method
+void malls() {
+	try {
+		System.out.println("Loading......");
+		Thread.sleep(5000);
+	}catch(InterruptedException e){
+		}
+	System.out.println("1.Marina Mall\n2.VR Mall\n3.Phoenix Mall");
+	Scanner scan=new Scanner(System.in);
+	int n=scan.nextInt();
+if(n==1) {
+	System.out.println("The Name of The Mall is:Marina Mall");
+	System.out.println("The Location of The Mall is at OMR Road");
+	System.out.println("The Star Rating of The Mall =5 ");
+	}
+else if(n==2) {
+	System.out.println("The Name of The Mall is:VR Mall");
+	System.out.println("The Location of The Mall is at AnnaNagar");
+	System.out.println("The Star Rating of The Mall =4 ");
+}
+else if(n==3) {
+	System.out.println("The Name of The Mall is:Phoenix Mall");
+	System.out.println("The Location of The Mall is at Velacherry");
+	System.out.println("The Star Rating of The Mall =4.5 ");
+}
+else {
+	System.out.println("The Mall is Currently UnAvailable");
+}
+}//closing of void malls method
+void hospitals() {
+	try {
+		System.out.println("Loading......");
+		Thread.sleep(5000);
+	}catch(InterruptedException e){
+		}
+	System.out.println("1.Miot Hospital\n2.Apollo Hospital\n3.Birla Hospital");
+	Scanner scan=new Scanner(System.in);
+	int n=scan.nextInt();
+	if(n==1) {
+		System.out.println("The Hospital Name is:Miot Hospital");
+		System.out.println("The Hospital Located at:Chennai");
+		System.out.println("The Consulting Fee is:500");
+		System.out.println("The Star Rating of The Hospital is:5");
+	}
+	else if(n==2)
+	{
+		System.out.println("The Hospital Name is:Apollo Hospital");
+		System.out.println("The Hospital Located at:Chennai");
+		System.out.println("The Consulting Fee is:400");
+		System.out.println("The Star Rating of The Hospital is:4.5");
+	}
+	else if(n==3) {
+		System.out.println("The Hospital Name is:Birla Hospital");
+		System.out.println("The Hospital Located at:Chennai");
+		System.out.println("The Consulting Fee is:300");
+		System.out.println("The Star Rating of The Hospital is:4");
+	}
+	else {
+		System.out.println("The Hospital is Currently UnAvailable");
+	}
+}//closing of hospitals method
+void banks(String a,String b,String c) {
+	try {
+		System.out.println("Loading......");
+		Thread.sleep(5000);
+	}catch(InterruptedException e){
+		}
+	System.out.println("1."+a+"\n2."+b+"\n3."+c);
+	Scanner scan=new Scanner(System.in);
+	int n=scan.nextInt();
+	if(n==1) {
+		System.out.println("The Bank Name is:"+a);
+		System.out.println("The Intrest in This Bank is:5%");
+		System.out.println("The Main Branch is Located at:Avadi");
+		System.out.println("The Service of Bank is:Good");
+	}
+	else if(n==2) {
+		System.out.println("The Bank Name is:"+b);
+		System.out.println("The Intrest in This Bank is:7%");
+		System.out.println("The Main Branch is Located at:Anna Nagar");
+		System.out.println("The Service of Bank is:Average");
+	}
+	else if(n==3) {
+		System.out.println("The Bank Name is:"+c);
+		System.out.println("The Intrest in This Bank is:9%");
+		System.out.println("The Main Branch is Located at:Parris");
+		System.out.println("The Service of Bank is:Better");
+	}
+	else {
+		System.out.println("The Bank is Currently UnAvailable");
+	}
+}//closing of banks method
+void ticketbooking() {
+	try {
+		System.out.println("Loading......");
+		Thread.sleep(5000);
+	}catch(InterruptedException e){
+		}
+	System.out.println("        Welcome to Ticket Booking      ");
+	Scanner scan=new Scanner(System.in);
+	System.out.println("Please Enter the Number of Passengers:");
+	String[] string=new String[scan.nextInt()];
+	System.out.println("Enter The Name And Age of The Passengers:");
+	scan.nextLine();
+	for(int i=0;i<string.length;i++) {
+		string[i]=scan.nextLine();
+	}
+	int price;
+	System.out.println("Please Enter the Number of Seats:");
+	int seats=scan.nextInt();
+	System.out.println("Please select from chennai to where:");
+	System.out.println();
+	System.out.println("1.Chennai to Delhi\n2.Chennai to Bangalore\n3.Chennai to Mysore\n4.Chennai to Ooty\n5.Chennai to Agra\n6.Chennai to Jaipur\n7.Chennai to Mumbai");
+	int n=scan.nextInt();
+	if (n==1)
+{
+System.out.println();
+System.out.println("Your Tickets has been  Booked Successfully\n    Your Details Are    ");
+System.out.println();
+System.out.println("The Train is From Chennai To Delhi");
+System.out.println("The Train Name is:Rajdhani Express");
+System.out.println("The Rate of a Ticket per Person is:2000");
+price=seats*2000;
+System.out.println("The Passengers Name And The Age are:");
+for(String str:string) {
+	System.out.println(str);
+}
+	System.out.println("The Price of The Tickets are:"+price);
+}
+	else if(n==2) {
+		System.out.println();
+		System.out.println("Your Tickets has been Booked Successfully\n    Your Details Are    ");
+		System.out.println();
+		System.out.println("The Train is From Chennai To Bangalore");
+		System.out.println("The Train Name is:Brindavanam Express");
+		System.out.println("The Rate of a Ticket per Person is:1500");
+	price=seats*1500;
+	System.out.println("The Passengers Name And The Age are:");
+	for(String str:string) {
+		System.out.println(str);
+	}
+		System.out.println("The Price of The Tickets are:"+price);
+	}
+	else if(n==3) {
+		System.out.println();
+		System.out.println("Your Tickets has been Booked Successfully\n    Your Details Are    ");
+		System.out.println();
+	System.out.println("The Train is From Chennai To Mysore");
+	System.out.println("The Train Name is:Shatabdi Express");
+	System.out.println("The Rate of a Ticket per Person is:1000");
+	price=seats*1000;
+	System.out.println("The Passengers Name And The Age are:");
+	for(String str:string) {
+		System.out.println(str);
+	}
+		System.out.println("The Price of The Tickets are:"+price);
+	}
+	else if(n==4) {
+		System.out.println();
+		System.out.println("Your Tickets has been Booked Successfully\n    Your Details Are    ");
+		System.out.println();
+	System.out.println("The Train is From Chennai To Ooty");
+	System.out.println("The Train Name is:Cheran Express");
+	System.out.println("The Rate of a Ticket per Person is:915");
+	price=seats*915;
+	System.out.println("The Passengers Name And The Age are:");
+	for(String str:string) {
+		System.out.println(str);
+	}
+		System.out.println("The Price of The Tickets are:"+price);
+	}
+	
+	else if(n==5) {
+		System.out.println();
+		System.out.println("Your Tickets has been Booked Successfully\n    Your Details Are    ");
+		System.out.println();
+		System.out.println("The Train is From Chennai To Agra");
+		System.out.println("The Train Name is:Rajdhani Express");
+		System.out.println("The Rate of a Ticket per Person is:2000");
+	price=seats*2000;
+	System.out.println("The Passengers Name And The Age are:");
+	for(String str:string) {
+		System.out.println(str);
+	}
+		System.out.println("The Price of The Tickets are:"+price);
+	}
+	else if(n==6) {
+		System.out.println();
+		System.out.println("Your Tickets has been Booked Successfully\n    Your Details Are    ");
+		System.out.println();
+		System.out.println("The Train is From Chennai To Jaipur");
+		System.out.println("The Train Name is:Anuvart Express");
+		System.out.println("The Rate of a Ticket per Person is:2140");
+	price=seats*2140;
+	System.out.println("The Passengers Name And The Age are:");
+	for(String str:string) {
+		System.out.println(str);
+	}//closing of for loop
+		System.out.println("The Price of The Tickets are:"+price);
+	}
+	else if(n==7) {
+		System.out.println();
+		System.out.println("Your Tickets has been Booked Successfully\n    Your Details Are    ");
+		System.out.println();
+		System.out.println("The Train is From Chennai To Mumbai");
+		System.out.println("The Train Name is:Sapthagiri Express");
+		System.out.println("The Rate of a Ticket per Person is:2124");
+	price=seats*2124;
+	System.out.println("The Passengers Name And The Age are:");
+	for(String str:string) {
+		System.out.println(str);
+	}//closing of for loop
+		System.out.println("The Price of The Tickets are:"+price);
+	}
+	else {
+		System.out.println("The Train You Selected is Currently UnAvailable");
+	}
+}//closing of void ticket booking
+	}//closing of the main class
+public class SmartCity {
+public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	char choice;
+	Main m=new Main();
+m.display();
+do {
+	System.out.println("This will help You To Search Your Needed Spots");
+System.out.println("\nIf You Are A Student Then Please Select\n###1.Student\nIf You Are A Tourist Then Please Select\n----->2.###Tourist\nOthers Then Please Select\n###3.Others");
+Scanner scan=new Scanner(System.in);
+int s=scan.nextInt();
+if(s==1) {
+	Set<String> l=new TreeSet<String>();
+	l.add("1.Schools\n2.Colleges");
+	for(String temp:l)
+	{
+		System.out.println(temp);
+	}
+   int n=scan.nextInt();
+	switch(n) {
+	case 1:
+		m.schools();
+		break;
+	case 2:
+		m.colleges();
+		break;
+	default:
+		System.out.println("Kindly Select The Correct Case");
+	}//closing of switch
+}//closing of if
+else if(s==2) {
+	Set<String> hs=new HashSet<String>();
+	hs.add("Kindly Select:\n1.HOTELS\n2.THEATERS\n3.MALLS\n4.TICKET BOOKING");
+	for(String temp:hs)
+	{
+		System.out.println(temp);
+	}
+	int n=scan.nextInt();
+	switch(n) {
+	case 1:
+		m.hotels();
+		break;
+	case 2:
+		m.theaters();
+		break;
+	case 3:
+		m.malls();
+		break;
+	case 4:
+		m.ticketbooking();
+		break;
+		default:
+			System.out.println("Kindly Select The Correct Case");
+	}//closing of switch
+}//closing of else if
+else if(s==3) {
+		try{
+			Queue<String> q1=new LinkedList<String>();
+		 q1.add("Click\n1.HOTELS\n2.THEATERS\n3.APARTMENTS\n4.SCHOOLS\n5.COLLEGES\n6.MALLS\n7.HOSPITALS\n8.BANKS\n9.TICKET BOOKING");
+		 for(String temp:q1)
+			{
+				System.out.println(temp);
+			}
+		int n=scan.nextInt();
+		switch(n) {
+	case 1:
+		m.hotels();
+		break;
+	case 2:
+		m.theaters();
+		break;
+	case 3:
+		m.appartments();
+		break;
+	case 4:
+		m.schools();
+		break;
+	case 5:
+		m.colleges();
+		break;
+	case 6:
+		m.malls();
+		break; 
+	case 7:
+		m. hospitals();
+		break;
+	case 8:
+		m.banks("HDFC Bank", "Union Bank", "State Bank Of India"); 
+		break;
+	case 9:
+		m.ticketbooking();
+		break;
+	default:
+			throw new InvalidCase();
+	}//closing of switch
+		}//closing of try
+	catch(InvalidCase c) {
+		}
+	}//closing of else if
+else {
+	System.out.println("Kindly Select the Correct Option");
+}
+System.out.println();
+System.out.println("Do You Want to Search again? ");
+System.out.println();
+System.out.println("Please Click y/n ");
+choice=scan.next().charAt(0);
+}//closing of do loop
+while(choice=='y' || choice=='Y');
+}//closing of main method
+	}//closing of smart city class
+	
